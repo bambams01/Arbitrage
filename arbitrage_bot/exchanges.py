@@ -101,3 +101,7 @@ class ExchangeManager:
         if taker is None:
             return 0.001
         return float(taker)
+
+    def fetch_order_book(self, exchange_id: str, symbol: str, limit: int = 20) -> dict:
+        exchange = self.instances[exchange_id]
+        return exchange.fetch_order_book(symbol, limit=limit)

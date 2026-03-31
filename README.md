@@ -6,9 +6,11 @@ Bot arbitrase crypto multi-exchange berbasis Python.
 - Multi-exchange via `ccxt`
 - Sinkronisasi market dan pair `*/USDT`
 - Pair index untuk pair yang tersedia di >=2 exchange
-- Scanner spread dasar
+- Scanner spread yang lebih realistis
+- Simulasi orderbook buy/sell
 - Estimasi fee trading
 - Cek network/transfer baseline (best effort)
+- Stability check beberapa tick
 - Telegram alert
 - `paper_trade` mode (aman untuk uji coba)
 - Struktur modular untuk dikembangkan ke eksekusi real trade
@@ -60,10 +62,9 @@ Jika exchange API gagal di mesin tertentu dengan error SSL/certificate, biasanya
 - `arbitrage_bot/logging_utils.py` - logger setup
 
 ## Roadmap
-- orderbook simulation
 - network metadata yang lebih akurat per exchange
-- persistence state
-- stability confirmation beberapa tick
+- persistence state yang lebih kaya
 - paper portfolio
 - risk engine
 - optional websocket ticker feeds
+- live trading path yang aman dan dibatasi

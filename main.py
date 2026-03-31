@@ -24,7 +24,11 @@ def format_alert(opp) -> str:
         f"Buy fee: {opp.buy_fee_pct:.4f}%\n"
         f"Sell fee: {opp.sell_fee_pct:.4f}%\n"
         f"Withdraw fee impact: {opp.withdraw_fee_pct:.4f}%\n"
-        f"Network: {opp.network or '-'}"
+        f"Network: {opp.network or '-'}\n"
+        f"Sim buy: {opp.simulated_buy_price or opp.buy_price:.8f}\n"
+        f"Sim sell: {opp.simulated_sell_price or opp.sell_price:.8f}\n"
+        f"Tradable base: {opp.tradable_base_amount or 0:.8f}\n"
+        f"Expected quote out: {opp.expected_quote_out or 0:.8f}"
     )
 
 

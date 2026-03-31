@@ -29,3 +29,7 @@ class Opportunity:
     withdraw_fee_pct: float
     quote_volume_hint: float | None = None
     network: str | None = None
+    simulated_buy_price: float | None = None
+    simulated_sell_price: float | None = None
+    tradable_base_amount: float | None = None
+    expected_quote_out: float | None = None

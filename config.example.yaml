@@ -6,6 +6,9 @@ bot:
   scan_interval_seconds: 5
   market_refresh_minutes: 60
   network_refresh_minutes: 15
+  orderbook_limit: 20
+  stability_checks: 2
+  stability_delay_seconds: 1.0
   paper_trade: true
   quote_asset: USDT
 
