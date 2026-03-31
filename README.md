@@ -48,6 +48,19 @@ Untuk scanning market publik, biasanya tidak wajib.
 python main.py --config config.yaml
 ```
 
+## Menjalankan di Replit
+- Import repo ini ke Replit
+- Replit akan memakai `.replit` dan `replit.nix`
+- Jalankan repl seperti biasa
+- Edit `config.yaml` sesuai kebutuhan
+- Untuk Telegram, isi `bot_token` dan `chat_id`
+- Untuk uji coba, biarkan `paper_trade: true`
+
+Catatan:
+- Replit cocok untuk demo dan pengujian
+- Replit kurang ideal untuk scanner 24/7 jangka panjang
+- Untuk operasi serius, pindah ke VPS/Armbian lebih baik
+
 ## Catatan SSL / sertifikat
 Jika exchange API gagal di mesin tertentu dengan error SSL/certificate, biasanya masalah ada di environment OS/Python certificate store, bukan di logika bot. Pada VPS Linux yang sehat, ini biasanya jauh lebih minim.
 

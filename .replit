@@ -1,0 +1,9 @@
+run = "python main.py --config config.yaml"
+language = "python3"
+entrypoint = "main.py"
+
+[nix]
+channel = "stable-24_05"
+
+[env]
+PYTHONUNBUFFERED = "1"
