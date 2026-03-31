@@ -1,4 +1,4 @@
-run = "python main.py --config config.yaml"
+run = "bash scripts/replit_run.sh"
 language = "python3"
 entrypoint = "main.py"
 

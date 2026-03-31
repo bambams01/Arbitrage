@@ -51,7 +51,9 @@ python main.py --config config.yaml
 ## Menjalankan di Replit
 - Import repo ini ke Replit
 - Replit akan memakai `.replit` dan `replit.nix`
-- Jalankan repl seperti biasa
+- Saat dijalankan, script `scripts/replit_run.sh` akan dipakai
+- Bootstrap awal ada di `scripts/replit_bootstrap.sh`
+- Update cepat dari GitHub bisa dilakukan dengan `bash scripts/replit_update.sh`
 - Edit `config.yaml` sesuai kebutuhan
 - Untuk Telegram, isi `bot_token` dan `chat_id`
 - Untuk uji coba, biarkan `paper_trade: true`
