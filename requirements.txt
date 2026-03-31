@@ -1,0 +1,4 @@
+ccxt>=4.4.70
+PyYAML>=6.0.2
+requests>=2.32.3
+python-dotenv>=1.0.1

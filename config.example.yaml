@@ -1,0 +1,43 @@
+bot:
+  min_spread_pct: 1.0
+  min_net_spread_pct: 0.5
+  min_quote_volume_usdt: 50000
+  min_buy_usdt: 25
+  scan_interval_seconds: 5
+  market_refresh_minutes: 60
+  network_refresh_minutes: 15
+  paper_trade: true
+  quote_asset: USDT
+
+telegram:
+  enabled: false
+  bot_token: ""
+  chat_id: ""
+
+exchanges:
+  - id: binance
+    enabled: true
+    api_key: ""
+    secret: ""
+  - id: kucoin
+    enabled: true
+    api_key: ""
+    secret: ""
+    password: ""
+  - id: bybit
+    enabled: false
+    api_key: ""
+    secret: ""
+  - id: mexc
+    enabled: false
+    api_key: ""
+    secret: ""
+  - id: gate
+    enabled: false
+    api_key: ""
+    secret: ""
+  - id: okx
+    enabled: false
+    api_key: ""
+    secret: ""
+    password: ""

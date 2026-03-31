@@ -1,5 +1,3 @@
-# trade_executor.py
+from arbitrage_bot.executor import TradeExecutor
 
-def execute_trade(opportunity, config):
-    # Placeholder implementation for trade execution
-    print(f"Executing trade: {opportunity}")
+__all__ = ["TradeExecutor"]

@@ -1,6 +1,3 @@
-# market_scanner.py
+from arbitrage_bot.scanner import scan_opportunities
 
-def scan_market(filtered_pairs, config):
-    # Placeholder implementation for market scanning
-    print("Scanning market... Placeholder implementation.")
-    return [{"pair": "BTC/USDT", "buy": "exchange1", "sell": "exchange2", "spread": 0.02}]
+__all__ = ["scan_opportunities"]
