@@ -3,14 +3,14 @@ bot:
   min_net_spread_pct: 0.5
   min_quote_volume_usdt: 50000
   min_buy_usdt: 25
-  scan_interval_seconds: 10
+  scan_interval_seconds: 5
   market_refresh_minutes: 60
   network_refresh_minutes: 15
   orderbook_limit: 20
   stability_checks: 2
   stability_delay_seconds: 1.0
   paper_trade: true
-  quote_asset: USDT
+  quote_asset: "USDT"
 
 telegram:
   enabled: false
@@ -18,16 +18,28 @@ telegram:
   chat_id: ""
 
 exchanges:
-  - id: binance
+  - id: "binance"
     enabled: true
-    api_key: ""
-    secret: ""
-  - id: kucoin
-    enabled: true
-    api_key: ""
-    secret: ""
+    api_key: "kKnKn9OwGnfqLxca9JHU6AGzTYjpFxCBO5gb3ECt2qV5nSDANFtcfZAMhMbyBpxw"
+    secret: "SsqvNouLmBHzMKaNWc6NO7NZKzQC8IDKq5UtFtdfNPc62UBZ5p0O1nOBniuNaE4X"
+  - id: "kucoin"
+    enabled: false
+    api_key: "your-kucoin-api-key"
+    secret: "your-kucoin-secret"
     password: ""
-  - id: bybit
+  - id: "bybit"
+    enabled: false
+    api_key: ""
+    secret: ""
+  - id: "mexc"
+    enabled: false
+    api_key: ""
+    secret: ""
+  - id: "gate"
+    enabled: false
+    api_key: ""
+    secret: ""
+  - id: "okx"
     enabled: false
     api_key: ""
     secret: ""
